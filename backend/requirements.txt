@@ -1,0 +1,11 @@
+langgraph
+typing
+python-dotenv
+requests
+datetime
+pymongo
+fastapi
+uvicorn
+twilio
+googletrans
+asyncio
