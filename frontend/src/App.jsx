@@ -1,5 +1,6 @@
 import React, { use, useState } from 'react';
 import axios from 'axios';
+import { Analytics } from '@vercel/analytics/react';
 
 const API_URL = "https://anna-data-452522242685.europe-west1.run.app";
 
@@ -187,6 +188,7 @@ function MockupSMS() {
       <footer className="mt-8 text-gray-400 text-xs text-center">
         &copy; 2025 SMS Mockup Demo - Powered by React & Tailwind CSS
       </footer>
+      <Analytics/>
     </div>
   );
 }
