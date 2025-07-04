@@ -767,7 +767,7 @@ def llm_command_generator(english_input: str, phone: str) -> Dict[str, Any]:
             "add": ["item1", "item2"],
             "remove": ["item3"]
         }}
-        "last_message_language": "value"    (dont update unless explicitly asked to update the language)(also use "en" in place of "english", and "hi" in place of "hindi" and as such)
+        "last_message_language": "value"    (dont update unless a language is mentioned in User command)(also use "en" in place of "english", and "hi" in place of "hindi" and as such)
     }}
     
     User command: {english_input}
@@ -775,7 +775,7 @@ def llm_command_generator(english_input: str, phone: str) -> Dict[str, Any]:
     Important:
     - Return only valid JSON
     - Use null for missing fields, but always keep the _id non-null
-    - if state is set, always capitalize it, for example WEST BENGAL, HARYANA.....
+    - if state is set, always capitalize it, for example WEST BENGAL, HARYANA, ODISHA ...
     - Keep arrays empty if no items
     """
     return invoke_nvidia_llm(prompt)
@@ -1212,5 +1212,5 @@ async def scheduled_run():
 
 
 
-# if __name__=="__main__":
-#     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+if __name__=="__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
