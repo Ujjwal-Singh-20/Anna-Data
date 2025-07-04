@@ -1,7 +1,7 @@
 import React, { use, useState } from 'react';
 import axios from 'axios';
 
-const API_URL = "http://localhost:8000";
+const API_URL = "https://anna-data-452522242685.europe-west1.run.app";
 
 function MockupSMS() {
   const [phone, setPhone] = useState('');
