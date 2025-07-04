@@ -1036,7 +1036,7 @@ async def whatsapp_webhook(request: Request):
         alert_message="",
         emergency_flag=False
     )
-    advisory_state = graph.invoke(state)
+    advisory_state = await graph.ainvoke(state)
     
     # Send response
     # send_whatsapp_message(phone, advisory_state["advice"][0] if advisory_state["advice"] else "")   #advisory_state["advice"])
@@ -1175,7 +1175,7 @@ async def scheduled_run():
             emergency_flag=True,
             language= user["last_message_language"]
         )
-        result = graph.invoke({
+        result = await graph.ainvoke({
             **state,
             "user_location": user["city"],
             "user_commodities": user["commodities"],
