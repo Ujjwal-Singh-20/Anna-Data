@@ -42,19 +42,19 @@ Backend hosted at: https://anna-data-452522242685.europe-west1.run.app
 There are more endpoints, but the above specified endpoints will be used in frontend and during showcase.
 ---
 ## Screenshots:
-You can just start with a "Hello", 
+You can just start with a "Hello", \
 ![Starting conversation](<Screenshot 2025-07-04 230827.png>)
 
-Entering the required details,
+Entering the required details, \
 ![Entering the required details](<Screenshot 2025-07-04 231321.png>)
 
-Changing language with a simple message,(output comes out in desired language)
+Changing language with a simple message,(output comes out in desired language) \
 ![desired language output](<Screenshot 2025-07-04 231348.png>)
 
-Changes reflected in MongoDB,
+Changes reflected in MongoDB, \
 ![MongoDB](<Screenshot 2025-07-04 231508.png>)
 
-Simulating scheduled-run,
+Simulating scheduled-run, \
 ![scheduled-run](<Screenshot 2025-07-04 231442.png>)
 
 ---
