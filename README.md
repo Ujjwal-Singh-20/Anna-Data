@@ -61,7 +61,7 @@ Simulating scheduled-run, \
 ## Setup and Installation:
 Backend:
 ```
-git clone https://github.com/yourusername/Anna-Data.git
+git clone https://github.com/Ujjwal-Singh-20/Anna-Data.git
 cd Anna-Data/backend
 pip install -r requirements.txt
 python main.py
