@@ -5,7 +5,7 @@ import { Analytics } from '@vercel/analytics/react';
 const API_URL = "https://anna-data-452522242685.europe-west1.run.app";
 
 function MockupSMS() {
-  const [phone, setPhone] = useState('');
+  const [phone, setPhone] = useState('+91');
   const [message, setMessage] = useState('');
   const [responses, setResponses] = useState([]);
   const [loadingMessages, setLoadingMessages] = useState(false);
